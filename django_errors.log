@@ -1,0 +1,1940 @@
+ERROR 2024-06-29 19:26:51,147 log Internal Server Error: /correct/
+Traceback (most recent call last):
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\api\views.py", line 143, in post
+    student_exam_papers = analyze_images(image_paths=imgs_list)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\api\utils.py", line 80, in analyze_images
+    base64_images = [encode_image(image_path) for image_path in image_paths]
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\api\utils.py", line 80, in <listcomp>
+    base64_images = [encode_image(image_path) for image_path in image_paths]
+                     ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\api\utils.py", line 76, in encode_image
+    with open(image_path, "rb") as image_file:
+         ^^^^^^^^^^^^^^^^^^^^^^
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+ERROR 2024-06-29 19:26:51,234 basehttp "POST /correct/ HTTP/1.1" 500 145
+ERROR 2024-06-29 19:32:16,453 log Internal Server Error: /correct/
+Traceback (most recent call last):
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\api\views.py", line 143, in post
+    student_exam_papers = analyze_images(image_paths=imgs_list)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: analyze_images() got an unexpected keyword argument 'image_paths'
+ERROR 2024-06-29 19:32:16,468 basehttp "POST /correct/ HTTP/1.1" 500 145
+ERROR 2024-07-04 15:53:28,991 log Internal Server Error: /correct/
+Traceback (most recent call last):
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\api\views.py", line 143, in post
+    student_exam_papers = extract_exam_text(image_paths=imgs_list)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\api\utils.py", line 82, in extract_exam_text
+    base64_images = [encode_image(path) for path in image_paths]
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\api\utils.py", line 82, in <listcomp>
+    base64_images = [encode_image(path) for path in image_paths]
+                     ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\api\utils.py", line 78, in encode_image
+    with open(image_path, "rb") as image_file:
+         ^^^^^^^^^^^^^^^^^^^^^^
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+ERROR 2024-07-04 15:53:29,081 basehttp "POST /correct/ HTTP/1.1" 500 145
+ERROR 2024-07-04 15:55:37,819 log Internal Server Error: /correct/
+Traceback (most recent call last):
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\api\views.py", line 143, in post
+    student_exam_papers = extract_exam_text(image_paths=imgs_list)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\api\utils.py", line 82, in extract_exam_text
+    base64_images = [encode_image(path) for path in image_paths]
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\api\utils.py", line 82, in <listcomp>
+    base64_images = [encode_image(path) for path in image_paths]
+                     ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\api\utils.py", line 78, in encode_image
+    with open(image_path, "rb") as image_file:
+         ^^^^^^^^^^^^^^^^^^^^^^
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+ERROR 2024-07-04 15:55:37,831 basehttp "POST /correct/ HTTP/1.1" 500 145
+ERROR 2024-07-04 15:59:29,391 log Internal Server Error: /correct/
+Traceback (most recent call last):
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\api\views.py", line 210, in post
+    save_review_to_db(structured_data, self.request.user)
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\api\utils.py", line 52, in save_review_to_db
+    student_review = StudentReview(
+                     ^^^^^^^^^^^^^
+NameError: name 'StudentReview' is not defined
+ERROR 2024-07-04 15:59:29,423 basehttp "POST /correct/ HTTP/1.1" 500 145
+ERROR 2024-07-04 16:22:37,334 log Internal Server Error: /correct/
+Traceback (most recent call last):
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\api\views.py", line 216, in post
+    save_review_to_db(structured_data, self.request.user)
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\api\utils.py", line 115, in save_review_to_db
+    student_name=response_data['student_name'],
+                 ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+KeyError: 'student_name'
+ERROR 2024-07-04 16:22:37,359 basehttp "POST /correct/ HTTP/1.1" 500 145
+ERROR 2024-07-04 17:14:10,300 log Internal Server Error: /auth/users/me/
+Traceback (most recent call last):
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\django\db\backends\base\base.py", line 289, in ensure_connection
+    self.connect()
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\django\db\backends\base\base.py", line 270, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\django\db\backends\postgresql\base.py", line 275, in get_new_connection
+    connection = self.Database.connect(**conn_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\psycopg2\__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: could not translate host name "roundhouse.proxy.rlwy.net" to address: No such host is known. 
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 324, in perform_authentication
+    request.user
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\rest_framework\request.py", line 231, in user
+    self._authenticate()
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\rest_framework\request.py", line 384, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\rest_framework\authentication.py", line 196, in authenticate
+    return self.authenticate_credentials(token)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\rest_framework\authentication.py", line 201, in authenticate_credentials
+    token = model.objects.select_related('user').get(key=key)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\django\db\models\query.py", line 633, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1560, in execute_sql
+    cursor = self.connection.cursor()
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\django\db\backends\base\base.py", line 330, in cursor
+    return self._cursor()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\django\db\backends\base\base.py", line 306, in _cursor
+    self.ensure_connection()
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\django\db\backends\base\base.py", line 288, in ensure_connection
+    with self.wrap_database_errors:
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\django\db\backends\base\base.py", line 289, in ensure_connection
+    self.connect()
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\django\db\backends\base\base.py", line 270, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\django\db\backends\postgresql\base.py", line 275, in get_new_connection
+    connection = self.Database.connect(**conn_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\psycopg2\__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: could not translate host name "roundhouse.proxy.rlwy.net" to address: No such host is known. 
+
+ERROR 2024-07-04 17:14:10,547 basehttp "GET /auth/users/me/ HTTP/1.1" 500 145
+ERROR 2024-07-04 17:48:48,445 log Internal Server Error: /correct/
+Traceback (most recent call last):
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\api\views.py", line 143, in post
+    student_exam_papers = extract_exam_text(image_streams=imgs_list)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: extract_exam_text() got an unexpected keyword argument 'image_streams'
+ERROR 2024-07-04 17:48:48,459 basehttp "POST /correct/ HTTP/1.1" 500 145
+ERROR 2024-07-04 17:49:15,864 log Internal Server Error: /correct/
+Traceback (most recent call last):
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\api\views.py", line 143, in post
+    student_exam_papers = extract_exam_text(image_streams=imgs_list)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: extract_exam_text() got an unexpected keyword argument 'image_streams'
+ERROR 2024-07-04 17:49:15,883 basehttp "POST /correct/ HTTP/1.1" 500 145
+ERROR 2024-07-04 17:52:49,650 log Internal Server Error: /correct/
+Traceback (most recent call last):
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\api\views.py", line 208, in post
+    save_review_to_db(structured_data, self.request.user)
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\api\utils.py", line 115, in save_review_to_db
+    student_name=response_data['student_name'],
+                 ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+KeyError: 'student_name'
+ERROR 2024-07-04 17:52:49,669 basehttp "POST /correct/ HTTP/1.1" 500 145
+ERROR 2024-07-04 17:56:44,249 log Internal Server Error: /correct/
+Traceback (most recent call last):
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\api\views.py", line 208, in post
+    save_review_to_db(structured_data, self.request.user)
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\api\utils.py", line 117, in save_review_to_db
+    final_score=response_data['review']['final_score'],
+                ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'final_score'
+ERROR 2024-07-04 17:56:44,259 basehttp "POST /correct/ HTTP/1.1" 500 145
+ERROR 2024-07-04 18:05:53,238 log Internal Server Error: /correct/
+Traceback (most recent call last):
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\api\views.py", line 143, in post
+    student_exam_papers = extract_exam_text(imgs_list)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\api\utils.py", line 157, in extract_exam_text
+    response = client.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\openai\_utils\_utils.py", line 277, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\openai\resources\chat\completions.py", line 606, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 1240, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 921, in request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 1005, in _request
+    return self._retry_request(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 1053, in _retry_request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 1005, in _request
+    return self._retry_request(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 1053, in _retry_request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 1020, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.RateLimitError: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+ERROR 2024-07-04 18:05:53,280 basehttp "POST /correct/ HTTP/1.1" 500 145
+ERROR 2024-07-12 14:23:57,795 log Internal Server Error: /correct/
+Traceback (most recent call last):
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\api\views.py", line 143, in post
+    student_exam_papers = extract_exam_text(imgs_list)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\api\utils.py", line 157, in extract_exam_text
+    response = client.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\openai\_utils\_utils.py", line 277, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\openai\resources\chat\completions.py", line 606, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 1240, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 921, in request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 1005, in _request
+    return self._retry_request(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 1053, in _retry_request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 1005, in _request
+    return self._retry_request(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 1053, in _retry_request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\Dev Moha\Desktop\exam-ai\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 1020, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.RateLimitError: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+ERROR 2024-07-12 14:23:57,924 basehttp "POST /correct/ HTTP/1.1" 500 145
+ERROR 2024-07-25 00:31:22,097 log Internal Server Error: /correct/
+Traceback (most recent call last):
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\db\backends\base\base.py", line 289, in ensure_connection
+    self.connect()
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\db\backends\base\base.py", line 270, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\db\backends\postgresql\base.py", line 275, in get_new_connection
+    connection = self.Database.connect(**conn_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\psycopg2\__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: could not translate host name "roundhouse.proxy.rlwy.net" to address: No such host is known. 
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 324, in perform_authentication
+    request.user
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\request.py", line 231, in user
+    self._authenticate()
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\request.py", line 384, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\authentication.py", line 196, in authenticate
+    return self.authenticate_credentials(token)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\authentication.py", line 201, in authenticate_credentials
+    token = model.objects.select_related('user').get(key=key)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\db\models\query.py", line 633, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1560, in execute_sql
+    cursor = self.connection.cursor()
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\db\backends\base\base.py", line 330, in cursor
+    return self._cursor()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\db\backends\base\base.py", line 306, in _cursor
+    self.ensure_connection()
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\db\backends\base\base.py", line 288, in ensure_connection
+    with self.wrap_database_errors:
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\db\backends\base\base.py", line 289, in ensure_connection
+    self.connect()
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\db\backends\base\base.py", line 270, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\db\backends\postgresql\base.py", line 275, in get_new_connection
+    connection = self.Database.connect(**conn_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\psycopg2\__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: could not translate host name "roundhouse.proxy.rlwy.net" to address: No such host is known. 
+
+ERROR 2024-07-25 00:31:22,269 basehttp "POST /correct/ HTTP/1.1" 500 145
+ERROR 2024-07-25 00:40:21,100 log Internal Server Error: /correct/
+Traceback (most recent call last):
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\api\views.py", line 143, in post
+    student_exam_papers = extract_exam_text(imgs_list)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\api\utils.py", line 157, in extract_exam_text
+    response = client.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\openai\_utils\_utils.py", line 277, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\openai\resources\chat\completions.py", line 606, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 1240, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 921, in request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 1020, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.AuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-3QLey***************************************WZtQ. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+ERROR 2024-07-25 00:40:21,181 basehttp "POST /correct/ HTTP/1.1" 500 145
+ERROR 2024-07-25 00:41:56,425 log Internal Server Error: /correct/
+Traceback (most recent call last):
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\api\views.py", line 143, in post
+    student_exam_papers = extract_exam_text(imgs_list)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\api\utils.py", line 157, in extract_exam_text
+    response = client.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\openai\_utils\_utils.py", line 277, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\openai\resources\chat\completions.py", line 606, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 1240, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 921, in request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 1020, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.AuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-3QLey***************************************WZtQ. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+ERROR 2024-07-25 00:41:56,445 basehttp "POST /correct/ HTTP/1.1" 500 145
+ERROR 2024-07-25 00:51:19,836 log Internal Server Error: /correct/
+Traceback (most recent call last):
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\api\views.py", line 143, in post
+    student_exam_papers = extract_exam_text(imgs_list)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\api\utils.py", line 157, in extract_exam_text
+    response = client.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\openai\_utils\_utils.py", line 277, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\openai\resources\chat\completions.py", line 606, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 1240, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 921, in request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 1020, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.AuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-3QLey***************************************WZtQ. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+ERROR 2024-07-25 00:51:19,871 basehttp "POST /correct/ HTTP/1.1" 500 145
+ERROR 2024-07-25 01:02:24,100 log Internal Server Error: /correct/
+Traceback (most recent call last):
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\api\views.py", line 143, in post
+    student_exam_papers = extract_exam_text(imgs_list)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\api\utils.py", line 157, in extract_exam_text
+    response = client.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\openai\_utils\_utils.py", line 277, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\openai\resources\chat\completions.py", line 606, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 1240, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 921, in request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 1020, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.AuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-3QLey***************************************WZtQ. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+ERROR 2024-07-25 01:02:24,137 basehttp "POST /correct/ HTTP/1.1" 500 145
+ERROR 2024-07-25 01:06:22,002 log Internal Server Error: /correct/
+Traceback (most recent call last):
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\api\views.py", line 143, in post
+    student_exam_papers = extract_exam_text(imgs_list)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\api\utils.py", line 157, in extract_exam_text
+    response = client.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\openai\_utils\_utils.py", line 277, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\openai\resources\chat\completions.py", line 606, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 1240, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 921, in request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 1020, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.AuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-3QLey***************************************WZtQ. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+ERROR 2024-07-25 01:06:22,027 basehttp "POST /correct/ HTTP/1.1" 500 145
+ERROR 2024-07-25 01:08:39,301 log Internal Server Error: /correct/
+Traceback (most recent call last):
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\api\views.py", line 143, in post
+    student_exam_papers = extract_exam_text(imgs_list)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\api\utils.py", line 157, in extract_exam_text
+    response = client.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\openai\_utils\_utils.py", line 277, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\openai\resources\chat\completions.py", line 606, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 1240, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 921, in request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 1020, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.AuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-3QLey***************************************WZtQ. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+ERROR 2024-07-25 01:08:39,327 basehttp "POST /correct/ HTTP/1.1" 500 145
+ERROR 2024-07-25 01:11:30,114 log Internal Server Error: /correct/
+Traceback (most recent call last):
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\api\views.py", line 143, in post
+    student_exam_papers = extract_exam_text(imgs_list)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\api\utils.py", line 157, in extract_exam_text
+    response = client.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\openai\_utils\_utils.py", line 277, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\openai\resources\chat\completions.py", line 606, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 1240, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 921, in request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 1020, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.AuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-3QLey***************************************WZtQ. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+ERROR 2024-07-25 01:11:30,139 basehttp "POST /correct/ HTTP/1.1" 500 145
+ERROR 2024-07-25 01:16:58,310 log Internal Server Error: /correct/
+Traceback (most recent call last):
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\api\views.py", line 142, in post
+    student_exam_papers = extract_exam_text(imgs_list)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\api\utils.py", line 157, in extract_exam_text
+    response = client.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\openai\_utils\_utils.py", line 277, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\openai\resources\chat\completions.py", line 606, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 1240, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 921, in request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 1020, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.AuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-3QLey***************************************WZtQ. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+ERROR 2024-07-25 01:16:58,334 basehttp "POST /correct/ HTTP/1.1" 500 145
+ERROR 2024-07-25 01:19:54,131 log Internal Server Error: /correct/
+Traceback (most recent call last):
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\api\views.py", line 142, in post
+    student_exam_papers = extract_exam_text(imgs_list)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\api\utils.py", line 157, in extract_exam_text
+    response = client.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\openai\_utils\_utils.py", line 277, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\openai\resources\chat\completions.py", line 606, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 1240, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 921, in request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 1020, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.AuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-3QLey***************************************WZtQ. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+ERROR 2024-07-25 01:19:54,151 basehttp "POST /correct/ HTTP/1.1" 500 145
+ERROR 2024-07-25 01:28:11,962 log Internal Server Error: /correct/
+Traceback (most recent call last):
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\api\views.py", line 146, in post
+    student_exam_papers = extract_exam_text(imgs_list)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\api\utils.py", line 157, in extract_exam_text
+    response = client.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\openai\_utils\_utils.py", line 277, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\openai\resources\chat\completions.py", line 606, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 1240, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 921, in request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 1020, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.AuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-3QLey***************************************WZtQ. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+ERROR 2024-07-25 01:28:11,978 basehttp "POST /correct/ HTTP/1.1" 500 145
+ERROR 2024-07-25 01:32:58,671 log Internal Server Error: /correct/
+Traceback (most recent call last):
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\api\views.py", line 146, in post
+    student_exam_papers = extract_exam_text(imgs_list)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\api\utils.py", line 157, in extract_exam_text
+    response = client.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\openai\_utils\_utils.py", line 277, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\openai\resources\chat\completions.py", line 606, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 1240, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 921, in request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 1020, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.AuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-3QLey***************************************WZtQ. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+ERROR 2024-07-25 01:32:58,688 basehttp "POST /correct/ HTTP/1.1" 500 145
+ERROR 2024-07-25 01:38:12,367 log Internal Server Error: /correct/
+Traceback (most recent call last):
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\api\views.py", line 145, in post
+    print(student_exam_papers)
+                          ^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\api\utils.py", line 157, in extract_exam_text
+    response = client.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\openai\_utils\_utils.py", line 277, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\openai\resources\chat\completions.py", line 606, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 1240, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 921, in request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 1020, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.AuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-3QLey***************************************WZtQ. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+ERROR 2024-07-25 01:38:12,402 basehttp "POST /correct/ HTTP/1.1" 500 145
+ERROR 2024-07-25 03:59:04,142 log Internal Server Error: /correct/
+Traceback (most recent call last):
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\httpx\_transports\default.py", line 69, in map_httpcore_exceptions
+    yield
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\httpx\_transports\default.py", line 233, in handle_request
+    resp = self._pool.handle_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\httpcore\_sync\connection_pool.py", line 216, in handle_request
+    raise exc from None
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\httpcore\_sync\connection_pool.py", line 196, in handle_request
+    response = connection.handle_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\httpcore\_sync\connection.py", line 99, in handle_request
+    raise exc
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\httpcore\_sync\connection.py", line 76, in handle_request
+    stream = self._connect(request)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\httpcore\_sync\connection.py", line 122, in _connect
+    stream = self._network_backend.connect_tcp(**kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\httpcore\_backends\sync.py", line 205, in connect_tcp
+    with map_exceptions(exc_map):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\httpcore\_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectError: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 952, in _request
+    response = self._client.send(
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\httpx\_client.py", line 914, in send
+    response = self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\httpx\_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\httpx\_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\httpx\_client.py", line 1015, in _send_single_request
+    response = transport.handle_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\httpx\_transports\default.py", line 232, in handle_request
+    with map_httpcore_exceptions():
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\httpx\_transports\default.py", line 86, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectError: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\api\views.py", line 144, in post
+    student_exam_papers = extract_exam_text(imgs_list)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\api\utils.py", line 119, in extract_exam_text
+    response = client.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\openai\_utils\_utils.py", line 277, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\openai\resources\chat\completions.py", line 606, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 1240, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 921, in request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 961, in _request
+    return self._retry_request(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 1053, in _retry_request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 976, in _request
+    return self._retry_request(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 1053, in _retry_request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 986, in _request
+    raise APIConnectionError(request=request) from err
+openai.APIConnectionError: Connection error.
+ERROR 2024-07-27 01:52:13,451 log Internal Server Error: /correct/
+Traceback (most recent call last):
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\api\views.py", line 208, in post
+    structured_data = extract_details_from_string(message_content.value)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\api\utils.py", line 59, in extract_details_from_string
+    "question_number": question_number,
+                       ^^^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'question_number' where it is not associated with a value
+ERROR 2024-07-27 01:52:13,555 basehttp "POST /correct/ HTTP/1.1" 500 145
+ERROR 2024-07-27 02:19:29,718 log Internal Server Error: /correct/
+Traceback (most recent call last):
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\api\views.py", line 208, in post
+    structured_data = extract_review_details(message_content.value)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\api\utils.py", line 14, in extract_review_details
+    response = json.loads(json_response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+ERROR 2024-07-27 02:19:29,787 basehttp "POST /correct/ HTTP/1.1" 500 145
+ERROR 2024-07-27 02:24:24,899 log Internal Server Error: /correct/
+Traceback (most recent call last):
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\api\views.py", line 208, in post
+    structured_data = extract_review_details(message_content.value)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\api\utils.py", line 14, in extract_review_details
+    response = json.loads(json_response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+ERROR 2024-07-27 02:31:20,035 log Internal Server Error: /correct/
+Traceback (most recent call last):
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\api\views.py", line 208, in post
+    structured_data = extract_review_details(message_content.value)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\api\utils.py", line 14, in extract_review_details
+    response = json.loads(json_response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+ERROR 2024-07-27 02:31:20,049 basehttp "POST /correct/ HTTP/1.1" 500 145
+ERROR 2024-07-27 03:24:38,218 log Internal Server Error: /correct/
+Traceback (most recent call last):
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\api\views.py", line 210, in post
+    save_review_to_db(structured_data, self.request.user)
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\api\utils.py", line 97, in save_review_to_db
+    student_name=response_data['review']['student_name'],
+                 ~~~~~~~~~~~~~^^^^^^^^^^
+TypeError: string indices must be integers, not 'str'
+ERROR 2024-07-27 03:24:38,249 basehttp "POST /correct/ HTTP/1.1" 500 145
+ERROR 2024-07-27 03:30:32,503 log Internal Server Error: /correct/
+Traceback (most recent call last):
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\httpx\_transports\default.py", line 69, in map_httpcore_exceptions
+    yield
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\httpx\_transports\default.py", line 233, in handle_request
+    resp = self._pool.handle_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\httpcore\_sync\connection_pool.py", line 216, in handle_request
+    raise exc from None
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\httpcore\_sync\connection_pool.py", line 196, in handle_request
+    response = connection.handle_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\httpcore\_sync\connection.py", line 99, in handle_request
+    raise exc
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\httpcore\_sync\connection.py", line 76, in handle_request
+    stream = self._connect(request)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\httpcore\_sync\connection.py", line 122, in _connect
+    stream = self._network_backend.connect_tcp(**kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\httpcore\_backends\sync.py", line 205, in connect_tcp
+    with map_exceptions(exc_map):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\httpcore\_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectTimeout: timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 952, in _request
+    response = self._client.send(
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\httpx\_client.py", line 914, in send
+    response = self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\httpx\_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\httpx\_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\httpx\_client.py", line 1015, in _send_single_request
+    response = transport.handle_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\httpx\_transports\default.py", line 232, in handle_request
+    with map_httpcore_exceptions():
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\httpx\_transports\default.py", line 86, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectTimeout: timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\api\views.py", line 178, in post
+    thread = client.beta.threads.create(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\openai\resources\beta\threads\threads.py", line 121, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 1240, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 921, in request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 961, in _request
+    return self._retry_request(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 1053, in _retry_request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 961, in _request
+    return self._retry_request(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 1053, in _retry_request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 971, in _request
+    raise APITimeoutError(request=request) from err
+openai.APITimeoutError: Request timed out.
+ERROR 2024-07-27 03:30:32,955 basehttp "POST /correct/ HTTP/1.1" 500 145
+ERROR 2024-07-27 03:50:41,177 log Internal Server Error: /correct/
+Traceback (most recent call last):
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\api\views.py", line 210, in post
+    save_review_to_db(structured_data, self.request.user)
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\api\utils.py", line 84, in save_review_to_db
+    student_name=response_data['review']['student_name'],
+                 ~~~~~~~~~~~~~^^^^^^^^^^
+TypeError: string indices must be integers, not 'str'
+ERROR 2024-07-27 03:50:41,190 basehttp "POST /correct/ HTTP/1.1" 500 145
+ERROR 2024-07-27 04:13:39,544 log Internal Server Error: /correct/
+Traceback (most recent call last):
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\api\views.py", line 209, in post
+    save_review_to_db(structured_data, self.request.user)
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\api\utils.py", line 74, in save_review_to_db
+    section=detail['section'],
+            ~~~~~~^^^^^^^^^^^
+KeyError: 'section'
+ERROR 2024-07-27 04:13:39,580 basehttp "POST /correct/ HTTP/1.1" 500 145
+ERROR 2024-07-27 04:16:13,266 log Internal Server Error: /correct/
+Traceback (most recent call last):
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\api\views.py", line 209, in post
+    save_review_to_db(structured_data, self.request.user)
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\api\utils.py", line 70, in save_review_to_db
+    question_detail = QuestionDetail(
+                      ^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\db\models\base.py", line 567, in __init__
+    raise TypeError(
+TypeError: QuestionDetail() got unexpected keyword arguments: 'reason', 'correct_answer'
+ERROR 2024-07-27 04:16:13,543 basehttp "POST /correct/ HTTP/1.1" 500 145
+ERROR 2024-07-27 04:23:08,102 log Internal Server Error: /correct/
+Traceback (most recent call last):
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\api\views.py", line 209, in post
+    save_review_to_db(structured_data, self.request.user)
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\api\utils.py", line 70, in save_review_to_db
+    question_detail = QuestionDetail(
+                      ^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\db\models\base.py", line 567, in __init__
+    raise TypeError(
+TypeError: QuestionDetail() got unexpected keyword arguments: 'reason', 'correct_answer'
+ERROR 2024-07-27 04:23:08,115 basehttp "POST /correct/ HTTP/1.1" 500 145
+ERROR 2024-07-27 04:38:01,925 log Internal Server Error: /correct/
+Traceback (most recent call last):
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\api\views.py", line 209, in post
+    save_review_to_db(structured_data, self.request.user)
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\api\utils.py", line 76, in save_review_to_db
+    reason=detail['reason'],
+           ~~~~~~^^^^^^^^^^
+KeyError: 'reason'
+ERROR 2024-07-27 04:38:01,937 basehttp "POST /correct/ HTTP/1.1" 500 145
+ERROR 2024-07-27 04:48:49,910 log Internal Server Error: /correct/
+Traceback (most recent call last):
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\api\views.py", line 209, in post
+    save_review_to_db(structured_data, self.request.user)
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\api\utils.py", line 75, in save_review_to_db
+    correct_answer=detail['correct_answer']
+                   ~~~~~~^^^^^^^^^^^^^^^^^^
+KeyError: 'correct_answer'
+ERROR 2024-07-27 04:48:49,924 basehttp "POST /correct/ HTTP/1.1" 500 145
+ERROR 2024-07-31 02:14:08,180 log Internal Server Error: /correct/
+Traceback (most recent call last):
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\api\views.py", line 130, in post
+    if student_files.name.endswith(('.docx')):
+       ^^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'name'
+ERROR 2024-07-31 02:14:08,307 basehttp "POST /correct/ HTTP/1.1" 500 145
+ERROR 2024-07-31 04:35:09,334 log Internal Server Error: /correct/
+Traceback (most recent call last):
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\httpx\_transports\default.py", line 69, in map_httpcore_exceptions
+    yield
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\httpx\_transports\default.py", line 233, in handle_request
+    resp = self._pool.handle_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\httpcore\_sync\connection_pool.py", line 216, in handle_request
+    raise exc from None
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\httpcore\_sync\connection_pool.py", line 196, in handle_request
+    response = connection.handle_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\httpcore\_sync\connection.py", line 99, in handle_request
+    raise exc
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\httpcore\_sync\connection.py", line 76, in handle_request
+    stream = self._connect(request)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\httpcore\_sync\connection.py", line 122, in _connect
+    stream = self._network_backend.connect_tcp(**kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\httpcore\_backends\sync.py", line 205, in connect_tcp
+    with map_exceptions(exc_map):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\httpcore\_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectError: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 952, in _request
+    response = self._client.send(
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\httpx\_client.py", line 914, in send
+    response = self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\httpx\_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\httpx\_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\httpx\_client.py", line 1015, in _send_single_request
+    response = transport.handle_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\httpx\_transports\default.py", line 232, in handle_request
+    with map_httpcore_exceptions():
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\httpx\_transports\default.py", line 86, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectError: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\api\views.py", line 197, in post
+    run = client.beta.threads.runs.retrieve(run.id, thread_id=thread.id)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\openai\resources\beta\threads\runs\runs.py", line 646, in retrieve
+    return self._get(
+           ^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 1183, in get
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 921, in request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 976, in _request
+    return self._retry_request(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 1053, in _retry_request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 976, in _request
+    return self._retry_request(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 1053, in _retry_request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\DG\Desktop\EXAM G AND CORRECTION\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 986, in _request
+    raise APIConnectionError(request=request) from err
+openai.APIConnectionError: Connection error.
+ERROR 2024-07-31 04:35:09,780 basehttp "POST /correct/ HTTP/1.1" 500 145
