@@ -36,6 +36,7 @@ ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'exam-api.up.railway.app',]
 CSRF_TRUSTED_ORIGINS = [
     "http://localhost:5173",
     "https://exam-api.up.railway.app",
+    "https://exam-ui.up.railway.app"
 
 ]
 
@@ -77,7 +78,7 @@ MIDDLEWARE = [
 
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:5173',
-    "https://exam-ui.up.railway.app"
+    "https://exam-ui.up.railway.app",
 ]
 
 
