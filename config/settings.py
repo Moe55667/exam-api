@@ -35,11 +35,7 @@ ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'exam-ai-api.up.railway.app','exam.up
 
 CSRF_TRUSTED_ORIGINS = [
     "http://localhost:5173",
-    # backend
-    "https://exam-ai-api.up.railway.app",
-    "https://www.exam-ai-api.up.railway.app",
-    # frontend
-    "https://exam.up.railway.app",
+    "https://exam-api.up.railway.app",
     "https://www.exam.up.railway.app",
 
 ]
