@@ -25,7 +25,7 @@ import os
 
 # Initialize OpenAI client
 client = OpenAI(api_key=os.environ["OPENAI_API_KEY"])
-assistant1 = "asst_GCINmHDsrAbyiJ 1sOq0JA8mX"
+assistant1 = "asst_GCINmHDsrAbyiJ1sOq0JA8mX"
 assistant2 = "asst_nRK4FSX9WAbFWZlQdLAVVQyr"
 
 # Create your views here.
