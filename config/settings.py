@@ -30,18 +30,12 @@ SECRET_KEY = env.str('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env.bool("DEBUG", default=False)
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'exam-ai-api.up.railway.app','exam.up.railway.app']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'exam-api.up.railway.app']
 
 
 CSRF_TRUSTED_ORIGINS = [
     "http://localhost:5173",
-    # backend
-    "https://exam-ai-api.up.railway.app",
-    "https://www.exam-ai-api.up.railway.app",
-    # frontend
-    "https://exam.up.railway.app",
-    "https://www.exam.up.railway.app",
-
+    "https://exam-api.up.railway.app",
 ]
 
 
@@ -93,7 +87,7 @@ REST_FRAMEWORK = {
     "DEFAULT_AUTHENTICATION_CLASSES": [ 
         # auth for rest_browserable api 
         "rest_framework.authentication.SessionAuthentication",
-        # auth for HTTPS api 
+        # auth for HTTPS api
         "rest_framework.authentication.TokenAuthentication"
     ],  
 }
@@ -184,18 +178,18 @@ WSGI_APPLICATION = 'config.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
 
 # RAILWAY POSTGRESQL DATABASE (LIVE)
-# import dj_database_url
-# DATABASES = {
-#     'default': dj_database_url.parse(env.str('DATABASE_URL'))
-# }
+import dj_database_url
+DATABASES = {
+    'default': dj_database_url.parse(env.str('DATABASE_URL'))
+}
 
 
 # Password validation
