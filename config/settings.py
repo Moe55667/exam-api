@@ -83,7 +83,7 @@ MIDDLEWARE = [
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:5173',
     "https://exam-ui.up.railway.app",
-    ""https://www.exam-ui.up.railway.app","
+    "https://www.exam-ui.up.railway.app",
 ]
 
 
