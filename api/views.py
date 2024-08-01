@@ -213,11 +213,13 @@ class CorrectExamAPIView(APIView):
                 save_review_to_db(structured_data, self.request.user)
                 # Extract and structure the response
                 # Return the status and file counts of the batch to see the result of this operation.
-                return Response({
+                response = Response({
                     'status': file_batch.status,
                     'file_counts': file_batch.file_counts,
                     'response': structured_data,
                 }, status=status.HTTP_200_OK)
+                response["Access-Control-Allow-Origin"] = "*"  # Add this line to set the CORS header
+                return response
             else:
                 return Response({
                     'status': file_batch.status,
