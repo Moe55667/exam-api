@@ -98,7 +98,8 @@ class GenerateExamAPIView(APIView):
                 response['Content-Disposition'] = f'attachment; filename=generated_exam.docx'
                 response['Content-Type'] = 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'
                 response.content = in_memory_file.read()
-
+                response["Access-Control-Allow-Origin"] = "*"
+                
                 return response
             else :
                 response = Response(
