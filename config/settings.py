@@ -30,13 +30,17 @@ SECRET_KEY = env.str('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env.bool("DEBUG", default=False)
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'exam-api.up.railway.app',]
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'exam-api.up.railway.app','exam-ui.up.railway.app']
 
 
 CSRF_TRUSTED_ORIGINS = [
     "http://localhost:5173",
+    # backend
     "https://exam-api.up.railway.app",
-    "https://exam-ui.up.railway.app"
+    "https://www.exam-api.up.railway.app",
+    # frontend
+    "https://exam-ui.up.railway.app",
+    "https://www.exam-ui.up.railway.app",
 
 ]
 
@@ -79,6 +83,7 @@ MIDDLEWARE = [
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:5173',
     "https://exam-ui.up.railway.app",
+    ""https://www.exam-ui.up.railway.app","
 ]
 
 
