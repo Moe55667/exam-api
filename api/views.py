@@ -25,7 +25,7 @@ import os
 
 # Initialize OpenAI client
 client = OpenAI(api_key=os.environ["OPENAI_API_KEY"])
-assistant1 = "asst_GCINmHDsrAbyiJ 1sOq0JA8mX"
+assistant1 = "asst_GCINmHDsrAbyiJ1sOq0JA8mX"
 assistant2 = "asst_nRK4FSX9WAbFWZlQdLAVVQyr"
 
 # Create your views here.
@@ -98,7 +98,6 @@ class GenerateExamAPIView(APIView):
                 response['Content-Disposition'] = f'attachment; filename=generated_exam.docx'
                 response['Content-Type'] = 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'
                 response.content = in_memory_file.read()
-
                 return response
             else :
                 response = Response(
@@ -212,11 +211,13 @@ class CorrectExamAPIView(APIView):
                 save_review_to_db(structured_data, self.request.user)
                 # Extract and structure the response
                 # Return the status and file counts of the batch to see the result of this operation.
-                return Response({
+                response = Response({
                     'status': file_batch.status,
                     'file_counts': file_batch.file_counts,
                     'response': structured_data,
                 }, status=status.HTTP_200_OK)
+                # Add this line to set the CORS header
+                return response
             else:
                 return Response({
                     'status': file_batch.status,

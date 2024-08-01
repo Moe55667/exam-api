@@ -33,7 +33,7 @@ DEBUG = env.bool("DEBUG", default=False)
 ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'exam-api.up.railway.app',]
 
 
-# Application definition
+# Application definition update
 
 INSTALLED_APPS = [
     'corsheaders',
@@ -67,7 +67,6 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-
 CORS_ALLOWED_ORIGINS = [
     'https://exam-ui.up.railway.app',
 ]
@@ -77,6 +76,8 @@ CSRF_TRUSTED_ORIGINS = [
     'https://exam-ui.up.railway.app'
 ]
 
+
+CORS_ALLOW_ALL_ORIGINS = True
 
 REST_FRAMEWORK = {
     'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
