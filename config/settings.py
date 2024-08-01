@@ -30,19 +30,13 @@ SECRET_KEY = env.str('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env.bool("DEBUG", default=False)
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'exam-api.up.railway.app']
-
-
-CSRF_TRUSTED_ORIGINS = [
-    "http://localhost:5173",
-    "https://exam-api.up.railway.app",
-]
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'exam-api.up.railway.app',]
 
 
 # Application definition
 
 INSTALLED_APPS = [
-    "corsheaders",
+    'corsheaders',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -62,7 +56,7 @@ INSTALLED_APPS = [
 
 
 MIDDLEWARE = [
-    "corsheaders.middleware.CorsMiddleware", # Add CORS middleware here
+    'corsheaders.middleware.CorsMiddleware', # Add CORS middleware here
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     "whitenoise.middleware.WhiteNoiseMiddleware", # whitenoise
@@ -75,7 +69,12 @@ MIDDLEWARE = [
 
 
 CORS_ALLOWED_ORIGINS = [
-    'http://localhost:5173',
+    'https://exam-ui.up.railway.app',
+]
+
+CSRF_TRUSTED_ORIGINS = [
+    'https://exam-api.up.railway.app',
+    'https://exam-ui.up.railway.app'
 ]
 
 
@@ -87,7 +86,7 @@ REST_FRAMEWORK = {
     "DEFAULT_AUTHENTICATION_CLASSES": [ 
         # auth for rest_browserable api 
         "rest_framework.authentication.SessionAuthentication",
-        # auth for HTTPS api
+        # auth for HTTPS api 
         "rest_framework.authentication.TokenAuthentication"
     ],  
 }
