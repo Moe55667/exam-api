@@ -41,7 +41,7 @@ CSRF_TRUSTED_ORIGINS = [
 ]
 
 
-# Application definition
+# Application definition update
 
 INSTALLED_APPS = [
     "corsheaders",
