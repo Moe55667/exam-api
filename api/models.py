@@ -14,5 +14,5 @@ class QuestionDetail(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE,null=True)
     student_review = models.ForeignKey(StudentReview, on_delete=models.CASCADE, related_name='detailed_review')
     question_number = models.IntegerField(null=True)
-    reason = models.CharField(max_length=50,null=True)
+    reason = models.TextField(null=True)
     correct_answer = models.TextField(null=True)

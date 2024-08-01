@@ -69,15 +69,15 @@ MIDDLEWARE = [
 
 CORS_ALLOWED_ORIGINS = [
     'https://exam-ui.up.railway.app',
+    'http://localhost:5173'
 ]
 
 CSRF_TRUSTED_ORIGINS = [
     'https://exam-api.up.railway.app',
-    'https://exam-ui.up.railway.app'
+    'https://exam-ui.up.railway.app',
+    'http://localhost:5173'
 ]
 
-
-CORS_ALLOW_ALL_ORIGINS = True
 
 REST_FRAMEWORK = {
     'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
