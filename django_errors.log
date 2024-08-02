@@ -2154,3 +2154,367 @@ Traceback (most recent call last):
 django.db.utils.DataError: value too long for type character varying(50)
 
 ERROR 2024-08-01 16:11:12,770 basehttp "POST /correct/ HTTP/1.1" 500 145
+ERROR 2024-08-01 17:10:16,812 log Internal Server Error: /correct/
+Traceback (most recent call last):
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\api\views.py", line 143, in post
+    student_exam_papers = extract_exam_text(imgs_list)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\api\utils.py", line 136, in extract_exam_text
+    response = client.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\openai\_utils\_utils.py", line 277, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\openai\resources\chat\completions.py", line 606, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 1240, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 921, in request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 1005, in _request
+    return self._retry_request(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 1053, in _retry_request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 1005, in _request
+    return self._retry_request(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 1053, in _retry_request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 1020, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.RateLimitError: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+ERROR 2024-08-01 17:10:16,944 basehttp "POST /correct/ HTTP/1.1" 500 145
+ERROR 2024-08-01 22:46:24,155 log Internal Server Error: /correct/
+Traceback (most recent call last):
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\api\views.py", line 143, in post
+    student_exam_papers = extract_exam_text(imgs_list)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\api\utils.py", line 136, in extract_exam_text
+    response = client.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\openai\_utils\_utils.py", line 277, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\openai\resources\chat\completions.py", line 606, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 1240, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 921, in request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 1005, in _request
+    return self._retry_request(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 1053, in _retry_request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 1005, in _request
+    return self._retry_request(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 1053, in _retry_request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 1020, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.RateLimitError: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+ERROR 2024-08-01 22:46:24,240 basehttp "POST /correct/ HTTP/1.1" 500 145
+ERROR 2024-08-01 23:07:06,409 log Internal Server Error: /correct/
+Traceback (most recent call last):
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\api\views.py", line 143, in post
+    student_exam_papers = extract_exam_text(imgs_list)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\api\utils.py", line 136, in extract_exam_text
+    response = client.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\openai\_utils\_utils.py", line 277, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\openai\resources\chat\completions.py", line 606, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 1240, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 921, in request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 1005, in _request
+    return self._retry_request(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 1053, in _retry_request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 1005, in _request
+    return self._retry_request(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 1053, in _retry_request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 1020, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.RateLimitError: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+ERROR 2024-08-01 23:07:06,461 basehttp "POST /correct/ HTTP/1.1" 500 145
+ERROR 2024-08-01 23:11:46,078 log Internal Server Error: /correct/
+Traceback (most recent call last):
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\api\views.py", line 143, in post
+    student_exam_papers = extract_exam_text(imgs_list)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\api\utils.py", line 136, in extract_exam_text
+    response = client.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\openai\_utils\_utils.py", line 277, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\openai\resources\chat\completions.py", line 606, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 1240, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 921, in request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 1005, in _request
+    return self._retry_request(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 1053, in _retry_request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 1020, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.AuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************a4hN. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+ERROR 2024-08-01 23:11:46,133 basehttp "POST /correct/ HTTP/1.1" 500 145
+ERROR 2024-08-01 23:16:09,871 log Internal Server Error: /correct/
+Traceback (most recent call last):
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\api\views.py", line 123, in post
+    vector_store = client.beta.vector_stores.create(name="Book vector store")
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\openai\resources\beta\vector_stores\vector_stores.py", line 108, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 1240, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 921, in request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 1020, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.AuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-************************************************************************************************************************vZUA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+ERROR 2024-08-01 23:16:10,039 basehttp "POST /correct/ HTTP/1.1" 500 145
+ERROR 2024-08-01 23:18:56,846 log Internal Server Error: /correct/
+Traceback (most recent call last):
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\api\views.py", line 123, in post
+    vector_store = client.beta.vector_stores.create(name="Book vector store")
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\openai\resources\beta\vector_stores\vector_stores.py", line 108, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 1240, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 921, in request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 1020, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.AuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-************************************************************************************************************************vZUA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+ERROR 2024-08-01 23:18:56,868 basehttp "POST /correct/ HTTP/1.1" 500 145
+ERROR 2024-08-01 23:23:17,493 log Internal Server Error: /correct/
+Traceback (most recent call last):
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\api\views.py", line 144, in post
+    student_exam_papers = extract_exam_text(imgs_list)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\api\utils.py", line 137, in extract_exam_text
+    response = client.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\openai\_utils\_utils.py", line 277, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\openai\resources\chat\completions.py", line 606, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 1240, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 921, in request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 1005, in _request
+    return self._retry_request(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 1053, in _retry_request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 1005, in _request
+    return self._retry_request(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 1053, in _retry_request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Desktop\exam-ai-last\exam-api\.venv\Lib\site-packages\openai\_base_client.py", line 1020, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.RateLimitError: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+ERROR 2024-08-01 23:23:17,522 basehttp "POST /correct/ HTTP/1.1" 500 145

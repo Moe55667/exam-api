@@ -24,7 +24,8 @@ from rest_framework import status
 import os
 
 # Initialize OpenAI client
-client = OpenAI(api_key=os.environ["OPENAI_API_KEY"])
+api_key="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"
+client = OpenAI(api_key=api_key)
 assistant1 = "asst_GCINmHDsrAbyiJ1sOq0JA8mX"
 assistant2 = "asst_nRK4FSX9WAbFWZlQdLAVVQyr"
 
