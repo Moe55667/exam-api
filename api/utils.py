@@ -6,8 +6,7 @@ import requests
 import os
 import re
 # OpenAI API Key
-api_key="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"
-client = OpenAI(api_key=api_key)
+client = OpenAI(api_key=os.environ["OPENAI_API_KEY"])
 
 def extract_review_details(response_text):
     # Extract general information
@@ -90,7 +89,7 @@ def encode_image(image_path):
 def extract_exam_text(image_paths):
     base64_images = [encode_image(path) for path in image_paths]
 
-    client = openai.OpenAI(api_key=api_key)
+    client = openai.OpenAI(api_key=os.environ["OPENAI_API_KEY"])
 
     messages = [
         {"role": "system", "content": "You are a helpful assistant that responds in Markdown."},
