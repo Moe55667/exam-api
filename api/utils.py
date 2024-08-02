@@ -8,6 +8,8 @@ import re
 # OpenAI API Key
 client = OpenAI(api_key=os.environ["OPENAI_API_KEY"])
 
+# some fixes
+
 def extract_review_details(response_text):
     # Extract general information
     student_name_match = re.search(r'"student_name": "([^"]+)"', response_text)
