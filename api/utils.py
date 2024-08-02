@@ -5,8 +5,12 @@ import base64
 import requests
 import os
 import re
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 # OpenAI API Key
-client = OpenAI(api_key=os.environ["OPENAI_API_KEY"])
+client = OpenAI()
 
 # some fixes
 
@@ -91,7 +95,7 @@ def encode_image(image_path):
 def extract_exam_text(image_paths):
     base64_images = [encode_image(path) for path in image_paths]
 
-    client = openai.OpenAI(api_key=os.environ["OPENAI_API_KEY"])
+    client = openai.OpenAI()
 
     messages = [
         {"role": "system", "content": "You are a helpful assistant that responds in Markdown."},

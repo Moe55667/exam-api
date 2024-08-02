@@ -12,10 +12,15 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 
 from pathlib import Path
 
-# environ
-import environ
-env = environ.Env()
-environ.Env.read_env()
+# env
+from dotenv import load_dotenv
+import os
+load_dotenv()
+
+secret_key = os.getenv('SECRET_KEY')
+database_url = os.getenv('DATABASE_URL')
+debug = os.getenv('DEBUG')
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -25,10 +30,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = env.str('SECRET_KEY')
+SECRET_KEY = secret_key
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = env.bool("DEBUG", default=False)
+DEBUG = debug
 
 ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'exam-api.up.railway.app',]
 
@@ -188,7 +193,7 @@ WSGI_APPLICATION = 'config.wsgi.application'
 # RAILWAY POSTGRESQL DATABASE (LIVE)
 import dj_database_url
 DATABASES = {
-    'default': dj_database_url.parse(env.str('DATABASE_URL'))
+    'default': dj_database_url.parse(database_url)
 }
 
 

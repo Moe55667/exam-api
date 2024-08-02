@@ -23,9 +23,14 @@ from rest_framework.response import Response
 from rest_framework import status
 import os
 
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
+
 # Initialize OpenAI client
 
-client = OpenAI(api_key=os.environ["OPENAI_API_KEY"])
+client = OpenAI()
 assistant1 = "asst_GCINmHDsrAbyiJ1sOq0JA8mX"
 assistant2 = "asst_nRK4FSX9WAbFWZlQdLAVVQyr"
 
