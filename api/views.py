@@ -114,7 +114,6 @@ class GenerateExamAPIView(APIView):
            
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
     
-
 class CorrectExamAPIView(APIView):
     def post(self, request, *args, **kwargs):
         serializer = CorrectExamSerializer(data=request.data)
@@ -231,7 +230,6 @@ class CorrectExamAPIView(APIView):
                     'response': "No response"
                 }, status=status.HTTP_200_OK)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-
 
 class RecordStudentMarkView(generics.ListCreateAPIView):
     serializer_class = StudentMarkSerializer
